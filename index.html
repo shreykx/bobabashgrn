@@ -10,8 +10,20 @@
   </head>
 
   <body
-    class="min-h-screen bg-[#301934] bg-[url('./image.png')] bg-cover bg-center bg-no-repeat bg-fixed before:opacity-40"
+    class="min-h-screen bg-[#301934] bg-[url('./image.png')] bg-cover bg-center bg-no-repeat bg-fixed before:opacity-40 relative"
   >
+  <!-- info butto to show -->
+    <button
+      type="button"
+      onclick="this.classList.toggle('scale-90')"
+      style="background-color: white; border-radius: 100%; padding: 10px"
+      class="absolute top-4 left-4 transition-transform duration-200 cursor-pointer"
+    >
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8gcHJldmlldy1pY29uIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik0xMiAxNnYtNCIvPjxwYXRoIGQ9Ik0xMiA4aC4wMSIvPjwvc3ZnPg=="
+        alt="info"
+      />
+    </button>
     <header class="page-header p-3">
       <h1 class="text-white henny-penny text-6xl text-center">
         Nevermore Clickr
@@ -128,7 +140,7 @@
             stroke-linejoin="round"
           />
 
-          <!-- Palm shading -->
+          <!-- Palm shading (the whole things makes a hand) -->
           <path
             d="M169 212 C185 234 198 264 201 302 C203 335 187 362 175 388"
             fill="none"
